@@ -16,8 +16,12 @@
   "bin": {
     "nls": "index.js"
   },
+  "type": "module",
   "bugs": {
     "url": "https://github.com/gabrielvrl/list/issues"
   },
-  "homepage": "https://github.com/gabrielvrl/list#readme"
+  "homepage": "https://github.com/gabrielvrl/list#readme",
+  "dependencies": {
+    "chalk": "^5.0.0"
+  }
 }
