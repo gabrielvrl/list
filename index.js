@@ -3,9 +3,10 @@
 import fs from 'fs';
 import chalk from 'chalk';
 
+const targetDir = process.argv[2] || process.cwd();
 
 const { lstat } = fs.promises;
-fs.readdir(process.cwd(), async (err, filenames) => {
+fs.readdir(targetDir, async (err, filenames) => {
   if(err) {
     console.log(err);
   }
